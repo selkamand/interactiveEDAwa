@@ -1,0 +1,5 @@
+library(interactiveEDA)
+library(munsell)
+library(infotheo)
+library(TSP)
+run_app()
