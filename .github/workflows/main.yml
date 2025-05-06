@@ -25,7 +25,7 @@ jobs:
 
       # Setup Linux Dependencies
       - name: Run shell script to install Linux dependencies
-        run: ./linux-setup.sh
+        run: ./setup.sh
 
       - name: Run setup.R to install dependencies
         shell: Rscript {0}
