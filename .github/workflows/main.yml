@@ -1,13 +1,11 @@
 name: Deploy app (custom setup.R)
 
 on:
-  workflow_call:
-    inputs:
-      cache-version:
-        type: string
-        default: "1"
-        required: false
-
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+  
 jobs:
   build:
     runs-on: ubuntu-latest
