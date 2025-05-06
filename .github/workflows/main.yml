@@ -5,7 +5,7 @@ on:
     branches:
       - main
   workflow_dispatch:
-  
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -22,6 +22,10 @@ jobs:
             posit-dev/r-shinylive
             sessioninfo
           cache-version: ${{ github.event.inputs.cache-version }}
+
+      # Setup Linux Dependencies
+      - name: Run shell script to install Linux dependencies
+        run: ./linux-setup.sh
 
       - name: Run setup.R to install dependencies
         shell: Rscript {0}
