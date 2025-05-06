@@ -1,4 +1,5 @@
 library(interactiveEDA)
+library(ggEDA)
 library(munsell)
 library(infotheo)
 library(TSP)
